@@ -51,6 +51,7 @@ use std::io;
 //     Ok(create_detector_with_model(model))
 // }
 
+#[cfg(feature = "include_default_model")]
 /// Create a face detector with the default model file
 pub fn create_default_detector() -> Result<Box<Detector>, io::Error> {
     let bytes = include_bytes!("../model/seeta_fd_frontal_v1.0.bin");
