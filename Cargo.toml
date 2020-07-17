@@ -17,6 +17,7 @@ default = ["mesalock_sgx"]
 mesalock_sgx = [
   "sgx_tstd",
 ]
+include_default_model = [ ]
 
 [dependencies]
 num = { git = "https://github.com/mesalock-linux/num-sgx" }
